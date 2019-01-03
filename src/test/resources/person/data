@@ -1,0 +1,5 @@
+<person><name>Foo</name><type>student</type><age>31</age></person>
+<person><name>Invalid age</name><type>student</type><age>-11</age></person>
+<person><name>Bar</name><type>student</type><age>12</age></person>
+<car><name>Optimus</name><type>heavy truck</type><age>1200</age></car>
+<person><name>FooBar</name><type>teacher</type><age>42</age></person>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description></description>
+    <groupId>d77eb6af-0162-1000-ab24-f2d2cda33801</groupId>
+    <name>outer group</name>
+    <snippet>
+        <processGroups>
+            <id>ee90a0cd-22e0-3f79-0000-000000000000</id>
+            <parentGroupId>d976674f-3435-3fec-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <comments></comments>
+            <contents>
+                <connections>
+                    <id>f544013f-66b6-3d59-0000-000000000000</id>
+                    <parentGroupId>ee90a0cd-22e0-3f79-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2f97625b-ebbe-32ce-0000-000000000000</groupId>
+                        <id>5b812093-d24b-39aa-0000-000000000000</id>
+                        <type>INPUT_PORT</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <name></name>
+                    <source>
+                        <groupId>74add768-ace8-3391-0000-000000000000</groupId>
+                        <id>7993d874-a389-31f3-0000-000000000000</id>
+                        <type>OUTPUT_PORT</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <processGroups>
+                    <id>2f97625b-ebbe-32ce-0000-000000000000</id>
+                    <parentGroupId>ee90a0cd-22e0-3f79-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>397.0000034025672</x>
+                        <y>516.9999889921673</y>
+                    </position>
+                    <comments></comments>
+                    <contents>
+                        <connections>
+                            <id>33c670e5-88ea-380e-0000-000000000000</id>
+                            <parentGroupId>2f97625b-ebbe-32ce-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>2f97625b-ebbe-32ce-0000-000000000000</groupId>
+<id>343631e2-626e-3667-0000-000000000000</id>
+<type>OUTPUT_PORT</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <name></name>
+                            <source>
+<groupId>2f97625b-ebbe-32ce-0000-000000000000</groupId>
+<id>5b812093-d24b-39aa-0000-000000000000</id>
+<type>INPUT_PORT</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <inputPorts>
+                            <id>5b812093-d24b-39aa-0000-000000000000</id>
+                            <parentGroupId>2f97625b-ebbe-32ce-0000-000000000000</parentGroupId>
+                            <position>
+<x>426.00000340256724</x>
+<y>164.00000043625914</y>
+                            </position>
+                            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                            <name>second input</name>
+                            <state>STOPPED</state>
+                            <type>INPUT_PORT</type>
+                        </inputPorts>
+                        <outputPorts>
+                            <id>343631e2-626e-3667-0000-000000000000</id>
+                            <parentGroupId>2f97625b-ebbe-32ce-0000-000000000000</parentGroupId>
+                            <position>
+<x>586.0000034025672</x>
+<y>432.00000043625914</y>
+                            </position>
+                            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                            <name>second output</name>
+                            <state>STOPPED</state>
+                            <type>OUTPUT_PORT</type>
+                            <validationErrors>'Port 'second output'' is invalid because Output connection for port 'second output' is not defined.</validationErrors>
+                        </outputPorts>
+                    </contents>
+                    <name>SecondInnerGroup</name>
+                    <variables/>
+                </processGroups>
+                <processGroups>
+                    <id>74add768-ace8-3391-0000-000000000000</id>
+                    <parentGroupId>ee90a0cd-22e0-3f79-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>388.0000034025672</x>
+                        <y>119.99998899216735</y>
+                    </position>
+                    <comments></comments>
+                    <contents>
+                        <connections>
+                            <id>2b07fdba-e287-39e2-0000-000000000000</id>
+                            <parentGroupId>74add768-ace8-3391-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>74add768-ace8-3391-0000-000000000000</groupId>
+<id>7993d874-a389-31f3-0000-000000000000</id>
+<type>OUTPUT_PORT</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <name></name>
+                            <source>
+<groupId>74add768-ace8-3391-0000-000000000000</groupId>
+<id>66afa0c6-6a10-31e9-0000-000000000000</id>
+<type>INPUT_PORT</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <inputPorts>
+                            <id>66afa0c6-6a10-31e9-0000-000000000000</id>
+                            <parentGroupId>74add768-ace8-3391-0000-000000000000</parentGroupId>
+                            <position>
+<x>410.00000340256724</x>
+<y>40.00000043625914</y>
+                            </position>
+                            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                            <name>Input</name>
+                            <state>STOPPED</state>
+                            <type>INPUT_PORT</type>
+                        </inputPorts>
+                        <outputPorts>
+                            <id>7993d874-a389-31f3-0000-000000000000</id>
+                            <parentGroupId>74add768-ace8-3391-0000-000000000000</parentGroupId>
+                            <position>
+<x>425.00000340256724</x>
+<y>284.00000043625914</y>
+                            </position>
+                            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                            <name>Output</name>
+                            <state>STOPPED</state>
+                            <type>OUTPUT_PORT</type>
+                        </outputPorts>
+                    </contents>
+                    <name>FirstInnerGroup</name>
+                    <variables/>
+                </processGroups>
+            </contents>
+            <name>OuterGroup</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>09/18/2018 12:58:52 CEST</timestamp>
+</template>
