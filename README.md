@@ -1,5 +1,7 @@
 # Plumber
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/dd626d435379444ea7480e959bdacda7)](https://app.codacy.com/app/bartektartanus/plumber?utm_source=github.com&utm_medium=referral&utm_content=TouK/plumber&utm_campaign=Badge_Grade_Dashboard)
+
 Plumber lets you tame Apache NiFi flows. It is a Scala library for easy NiFi flow testing. 
 Flows can be created using builders where you specify nodes and connections between them 
 or you can load entire flow exported directly from NiFi.
