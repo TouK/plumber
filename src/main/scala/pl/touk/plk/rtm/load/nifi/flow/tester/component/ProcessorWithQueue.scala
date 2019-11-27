@@ -10,10 +10,10 @@ import pl.touk.plk.rtm.load.nifi.flow.tester.Service
 import scala.collection.JavaConversions._
 
 private[tester] class ProcessorWithQueue(val processor: ProcessorDTO, val variables: Map[String, String], val controllerServices: List[Service]) extends  ComponentWithQueue(processor){
-  private var runner: TestRunner = initRunner(controllerServices)
+  private val runner: TestRunner = initRunner(controllerServices)
 
   private def initRunner(controllerServices: List[Service]): TestRunner ={
-    this.runner = newTestRunner(Class.forName(processor.getType).newInstance().asInstanceOf[Processor])
+    val runner = newTestRunner(Class.forName(processor.getType).newInstance().asInstanceOf[Processor])
     variables.foreach{
       case (key, value) => runner.setVariable(key, value)
     }
