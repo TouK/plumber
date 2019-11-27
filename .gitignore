@@ -1,4 +1,5 @@
 .idea
+*.iml
 target/
 
 # Ignore Mac DS_Store files
