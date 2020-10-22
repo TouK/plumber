@@ -10,7 +10,7 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
-        <nifi.version>1.6.0</nifi.version>
+        <nifi.version>1.9.2</nifi.version>
         <scala.api.version>2.11</scala.api.version>
         <scala.version>${scala.api.version}.12</scala.version>
         <scalatest.version>3.0.8</scalatest.version>
@@ -83,6 +83,12 @@
                     <artifactId>slf4j-log4j12</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.nifi</groupId>
+            <artifactId>nifi-lookup-service-api</artifactId>
+            <version>${nifi.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.nifi</groupId>
