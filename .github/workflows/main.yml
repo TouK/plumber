@@ -1,0 +1,15 @@
+name: Plumber CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:  
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup Java JDK
+        uses: actions/setup-java@v1.4.3
