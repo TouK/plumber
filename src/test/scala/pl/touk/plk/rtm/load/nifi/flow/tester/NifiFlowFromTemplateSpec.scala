@@ -176,7 +176,7 @@ class NifiFlowFromTemplateSpec extends FunSuite with Matchers {
       flow.run(1)
     }
 
-    flow.setValidateExpressionUsageByType(classOf[ReplaceText], false, true)
+    flow.setValidateExpressionUsageByType(classOf[ReplaceText], validate = false, recursive = true)
 
     flow.run()
 
