@@ -10,7 +10,7 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
-        <nifi.version>1.11.4</nifi.version>
+        <nifi.version>1.23.0</nifi.version>
         <scala.api.version>2.11</scala.api.version>
         <scala.version>${scala.api.version}.12</scala.version>
         <scalatest.version>3.0.8</scalatest.version>
